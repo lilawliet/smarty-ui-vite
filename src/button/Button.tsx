@@ -1,8 +1,17 @@
-import { defineComponent,onMounted,PropType,toRefs} from "vue";
+import { defineComponent, PropType } from "vue";
 import "uno.css";
 
 export type ISize = "small" | "medium" | "large";
-export type IColor = 'black' | 'gray' | 'red' | 'yellow' | 'green'|'blue'|'indigo'|'purple'|'pink'
+export type IColor =
+  | "black"
+  | "gray"
+  | "red"
+  | "yellow"
+  | "green"
+  | "blue"
+  | "indigo"
+  | "purple"
+  | "pink";
 export const props = {
   // 新增
   size: {
@@ -34,8 +43,7 @@ export const props = {
 export default defineComponent({
   name: "SButton",
   props,
-  setup(props, {slots}) {
-
+  setup(props, { slots }) {
     const size = {
       small: {
         x: "2",
@@ -53,8 +61,7 @@ export default defineComponent({
         text: "lg",
       },
     };
-    
-    
+
     return () => (
       <button
         class={`
@@ -79,6 +86,7 @@ export default defineComponent({
           ""
         )}
         {slots.default ? slots.default() : ""}
-      </button>)
-  }
+      </button>
+    );
+  },
 });

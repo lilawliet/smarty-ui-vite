@@ -1,3 +1,8 @@
 {
-    "files.eol": "\r\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n"
 }

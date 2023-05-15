@@ -1,7 +1,7 @@
 import { createApp } from "vue";
-import Main from './Main'
-import 'virtual:uno.css'
+import Main from "./Main";
+import "virtual:uno.css";
 
 createApp(Main)
-// .use(SmartyUI)
-.mount("#app");
+  // .use(SmartyUI)
+  .mount("#app");
