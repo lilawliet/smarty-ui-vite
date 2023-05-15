@@ -17,7 +17,7 @@
     "test:run": "vitest run"
   },
   "keywords": [],
-  "author": "",
+  "author": "lawliet007",
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/ic": "1.1.4",
