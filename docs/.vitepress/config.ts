@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { demoBlockPlugin } from 'vitepress-theme-demoblock'
 
 
 const sidebar = {
@@ -6,15 +7,15 @@ const sidebar = {
     { text: '快速开始', link: '/' },
     {
       text: '通用',
-      items: [
+      children: [
         { text: 'Button 按钮', link: '/components/' },
       ]
     },
-    { text: '导航' },
-    { text: '反馈' },
-    { text: '数据录入' },
-    { text: '数据展示' },
-    { text: '布局' },
+    { text: '导航' ,children: [ ] },
+    { text: '反馈' ,children: [ ] },
+    { text: '数据录入' ,children: [ ] },
+    { text: '数据展示' ,children: [ ] },
+    { text: '布局' ,children: [ ] },
     // {
     //   text: 'Examples',
     //   items: [
@@ -39,8 +40,14 @@ export default defineConfig({
 
     sidebar,
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   },
+  markdown: {
+    config: (md) => {
+      // 添加DemoBlock插槽
+      md.use(demoBlockPlugin)
+    }
+  }
 })
