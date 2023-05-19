@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import { describe, expect, test } from "vitest";
-import Button from "@/Button/Button";
+import Button from "../Button";
 
 describe("Button", () => {
   // mount
