@@ -1,7 +1,6 @@
 {
-  "name": "smarty-ui-vite",
+  "name": "@lawliet007/smarty-ui-vite",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -45,5 +44,17 @@
   },
   "dependencies": {
     "vue": "3.2.37"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilawliet/smarty-ui-vite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lilawliet/smarty-ui-vite/issues"
+  },
+  "homepage": "https://github.com/lilawliet/smarty-ui-vite#readme",
+  "description": ""
 }

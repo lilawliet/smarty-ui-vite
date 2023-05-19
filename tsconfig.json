@@ -1,23 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "ES2020", /* 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
-        "module": "ESNext", /* 指定使用模块: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-        "moduleResolution": "node", /* 用来解析模块的策略 */
-        "baseUrl": "./",
-        "paths": {
-          "@/*": ["./src/*"]
-        },
-        "declaration": true, /* 生成相关的 '.d.ts' 文件。 */
-        "declarationDir": "./dist/types", /* '.d.ts' 文件输出目录 */
-        "jsx": "preserve",
+  "compilerOptions": {
+    "target": "ES2020" /* 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
+    "module": "ESNext" /* 指定使用模块: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "moduleResolution": "node" /* 用来解析模块的策略 */,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
     },
-    "include": [
-        "./**/*.*",
-        "./shims-vue.d.ts",
-    ],
-    "exclude": [
-        "node_modules"
-    ],
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": "true",
+    "declaration": true /* 生成相关的 '.d.ts' 文件。 */,
+    "declarationDir": "./dist/types" /* '.d.ts' 文件输出目录 */,
+    "jsx": "preserve"
+  },
+  "include": ["./**/*.*", "./shims-vue.d.ts"],
+  "exclude": ["node_modules"],
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": "true"
 }
